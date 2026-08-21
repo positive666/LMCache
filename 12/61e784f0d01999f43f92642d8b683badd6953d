@@ -9,6 +9,7 @@ lmcache/v1/distributed/eviction_policy/lru.py
 lmcache/v1/distributed/eviction_policy/isolated_lru.py
   s_23deada145cdd4::t_194af54cd1147b 80-82,87-116,140-143,166-169,191,197-199,202-229,257,309-313,320-327
   s_23deada145cdd4::t_b15a86697546ad 57-60,134-139,148-149,196,200-201,314-319,328-337
+  s_23deada145cdd4::t_48ef6e985e3cb0 308
 tests/v1/distributed/test_isolated_lru_eviction_policy.py
   s_23deada145cdd4::t_194af54cd1147b 104-147,150-151,153-156,170
   s_23deada145cdd4::t_b15a86697546ad 148-149,152,157-169
