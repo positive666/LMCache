@@ -1,0 +1,34 @@
+tests/v1/distributed/test_eviction_extra_logging.py
+  s_0dd0c9f7973d90::t_0c36f7b838f380 6-7,10,27-28,31-32,39-88
+  s_0dd0c9f7973d90::t_b35b90539c9b0d 89-90
+docs/design/v1/distributed/l2_adapters/l2_eviction.md
+  s_0dd0c9f7973d90::t_331a8d52672d17 17-29
+lmcache/v1/distributed/storage_controllers/eviction_controller.py
+  s_0dd0c9f7973d90::t_0c36f7b838f380 35-36,243,276,321-332
+tests/v1/distributed/test_isolated_lru_eviction_policy.py
+  s_8ac9d707bc8c46::t_d1db6e9cf5b17b 312
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "f54c7cd5b5c436f9397bee28720417b354741d35",
+  "prompts": {},
+  "sessions": {
+    "s_0dd0c9f7973d90": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0faf8-9cd7-7ec2-aa36-721e47a1014f",
+        "model": "gpt-6-astra"
+      },
+      "human_author": null
+    },
+    "s_8ac9d707bc8c46": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1573f-e8ca-7c73-9df6-e466f6502fea",
+        "model": "unknown"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}
