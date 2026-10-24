@@ -1,0 +1,248 @@
+.buildkite/k3_tests/multiprocess/scripts/workloads/vllm/hma-lm-eval.sh
+  h_ed9443f8f568be 53-56,151-196,214-215
+.buildkite/k3_tests/xpu/multiprocess/pipeline.yml
+  h_ed9443f8f568be 75-104
+.claude/skills/hybrid-benchmarking/SKILL.md
+  h_ed9443f8f568be 138-140,171
+.github/scripts/run-cpu-e2e-validation.sh
+  h_ed9443f8f568be 692,699
+.github/workflows/code_quality_checks.yml
+  h_ed9443f8f568be 57,60-62
+csrc/sycl/mp_mem_kernels_sycl.cpp
+  h_ed9443f8f568be 67-71
+docs/design/integration/vllm/mp_lookup_state.md
+  h_ed9443f8f568be 1-118
+docs/design/v1/distributed/l2_adapters/fault_inject.md
+  h_ed9443f8f568be 53-55
+docs/design/v1/distributed/l2_adapters/overall.md
+  h_ed9443f8f568be 278,286-287
+docs/design/v1/distributed/memory_tags.md
+  h_ed9443f8f568be 25-27,145,147-149,151-157,159-182
+docs/design/v1/distributed/storage_controllers/prefetch_controller.md
+  h_ed9443f8f568be 48-51,63,70-72
+docs/design/v1/distributed/storage_manager.md
+  h_ed9443f8f568be 44,47-52,74
+docs/design/v1/mp_coordinator/blend_lookup.md
+  h_ed9443f8f568be 128
+docs/design/v1/mp_observability/EVENTS.md
+  h_ed9443f8f568be 274
+docs/design/v1/mp_observability/trace.md
+  h_ed9443f8f568be 276
+docs/source/cli/bench.rst
+  h_ed9443f8f568be 6-8,25-28,32,1899-2121
+docs/source/cli/index.rst
+  h_ed9443f8f568be 68-69
+docs/source/cli/trace.rst
+  h_ed9443f8f568be 42,61
+docs/source/mp/configuration.rst
+  h_ed9443f8f568be 238
+docs/source/mp/hybrid_models.rst
+  h_ed9443f8f568be 146,162-163,167-168,170-174,179-184,209-210,212-215
+docs/source/mp/tracing_and_debugging.rst
+  h_ed9443f8f568be 94
+docs/source/recipes/kimi_k3.rst
+  h_ed9443f8f568be 49-54,69-70,118,140
+docs/source/recipes/kimi_linear.rst
+  h_ed9443f8f568be 34,36-38,58-59,65-67,78,101,107
+docs/source/recipes/qwen3_5.rst
+  h_ed9443f8f568be 32-35,55,72,78-81,85-86
+docs/source/recipes/qwen3_8_flash_next.rst
+  h_ed9443f8f568be 38-42,68
+lmcache/cli/commands/bench/server_bench/helpers.py
+  h_ed9443f8f568be 160
+lmcache/cli/commands/bench/trace_analyze/__init__.py
+  h_ed9443f8f568be 1-39
+lmcache/integration/atom/multi_process_adapter.py
+  h_ed9443f8f568be 294,300,592,815,821
+lmcache/integration/sglang/unified_lmcache_mp_connector.py
+  h_ed9443f8f568be 557,613,621
+lmcache/integration/tensorrt_llm/tensorrt_mp_adapter.py
+  h_ed9443f8f568be 120,127,313,318
+lmcache/integration/vllm/lazy_offload_manager.py
+  h_ed9443f8f568be 161,207,515,517-518,522-524,529-530,532,535,538-539
+lmcache/integration/vllm/lmcache_mp_connector.py
+  h_ed9443f8f568be 269-289,621,1375,1433,1468-1478,1501,1586
+lmcache/integration/vllm/lmcache_mp_metadata.py
+  h_ed9443f8f568be 25-29,102-106,126,227-228,230-241,243-248,251-274,394,396,463,473
+lmcache/integration/vllm/mp_lookup_state.py
+  h_ed9443f8f568be 1-420
+lmcache/integration/vllm/vllm_multi_process_adapter.py
+  h_ed9443f8f568be 23,51-55,652-654,766-769,886,896-898,903,932,936-938,944,953-960,962-963,971-977,979-981,992-995,998-1000,1012-1015,1019-1021,1072,1094-1095,1111,1127-1130,1138-1141,1172,1179,1182,1200,1228,1230,1437,1609,1777,1845,2361-2362,2382-2384,2595,2602,2605,2621
+lmcache/sdk/context.py
+  h_ed9443f8f568be 540,545
+lmcache/sdk/qringbuffer.py
+  h_ed9443f8f568be 696-697,701
+lmcache/tools/cache_simulator/lru_cache.py
+  h_ed9443f8f568be 49-56,59-60,62,65
+lmcache/tools/cache_simulator/trace_analyze.py
+  h_ed9443f8f568be 1-830
+lmcache/v1/distributed/api.py
+  h_ed9443f8f568be 547-552,558-561,568-569
+lmcache/v1/distributed/l2_adapters/fault_inject_l2_adapter.py
+  h_ed9443f8f568be 101,131
+lmcache/v1/distributed/storage_controllers/prefetch_controller.py
+  h_ed9443f8f568be 34,322-334,345-346,388-392,457-460,625-626,634-635,1120,1124,1139,1161-1162,1177-1180,1299,1303,1473-1488
+lmcache/v1/distributed/storage_manager.py
+  h_ed9443f8f568be 612-616,618,621-622,627-628
+lmcache/v1/kv_layer_groups.py
+  h_ed9443f8f568be 604-626
+lmcache/v1/mp_observability/trace/codecs.py
+  h_ed9443f8f568be 34-36,283-307,316-317,327-328,380-383
+lmcache/v1/mp_observability/trace/format.py
+  h_ed9443f8f568be 45-48
+lmcache/v1/multiprocess/cache_control/key_resolver.py
+  h_ed9443f8f568be 58,62
+lmcache/v1/multiprocess/custom_types.py
+  h_ed9443f8f568be 3,12-16,27,38,42-46,56,89-93,111,119-138,144,152-156,181,194-231,247-250,262,267-274,278
+lmcache/v1/multiprocess/engine_context.py
+  h_ed9443f8f568be 420
+lmcache/v1/multiprocess/futures.py
+  h_ed9443f8f568be 9,17-18,68-90,166-169,182-185,245-258,440-446
+lmcache/v1/multiprocess/modules/blend/lookup.py
+  h_ed9443f8f568be 45,117-119,366-368,383,386,403,496,535,684-685,752
+lmcache/v1/multiprocess/modules/blend/module.py
+  h_ed9443f8f568be 45,250,261
+lmcache/v1/multiprocess/modules/blend/store.py
+  h_ed9443f8f568be 28,99,109-111,177
+lmcache/v1/multiprocess/modules/engine_driven_transfer.py
+  h_ed9443f8f568be 16,270-293,323-325,356-391,396-397,430-461,463-465,498,505-508,512-515,518-533,539-540,580,616-629,634-635
+lmcache/v1/multiprocess/modules/lmcache_driven_transfer.py
+  h_ed9443f8f568be 47,1168
+lmcache/v1/multiprocess/modules/lookup.py
+  h_ed9443f8f568be 38,60-61,234-235,263,266,277,377,671
+lmcache/v1/multiprocess/modules/p2p_controller.py
+  h_ed9443f8f568be 21-23,320-322,324-331
+lmcache/v1/multiprocess/modules/server_transfer.py
+  h_ed9443f8f568be 6,24,26,72,84,103-104,113-116,130,140-141,153-154,162-167,197-198,220-221,225-228,232,235-237,239,242,244,284-285,292-303,318-377,383-384,386-395,401-410,414-439,494-495,499-505,507-508,510-517,520,522-558,560-563,567-570,579,593,609-610,612-627,629-660,663-668
+lmcache/v1/multiprocess/session.py
+  h_ed9443f8f568be 18,35-38,45,62,66-67,70,109-110,113,118,120,136-138,141-142,149,203,248
+lmcache/v1/multiprocess/token_codec.py
+  h_ed9443f8f568be 1-90
+lmcache/v1/multiprocess/token_hasher.py
+  h_ed9443f8f568be 24-29,34-35,37-39,43,52,55-73,89-95,222-278
+lmcache/v1/multiprocess/transfer_context/async_engine_driven.py
+  h_ed9443f8f568be 17,220-223,359-478
+lmcache/v1/multiprocess/transfer_context/base.py
+  h_ed9443f8f568be 74-75,78-83,89-90,166-202,337,385,408-412,421-423,449,459,477-482,499,515,537,572-579,623-630,639-641,646-650,668,670,684,686
+lmcache/v1/multiprocess/transfer_context/inline.py
+  h_ed9443f8f568be 4-6,17,19,57-60,64-69,73-78,113-144
+lmcache/v1/multiprocess/transfer_context/shm.py
+  h_ed9443f8f568be 182-249
+lmcache/v1/multiprocess/transfer_context/tensor_wire.py
+  h_ed9443f8f568be 45-75,91-98,118,159-173,178,209-316
+lmcache/v1/multiprocess/transfer_context/worker_transfer.py
+  h_ed9443f8f568be 7-8,20-25,27,41,54,180-229,325,341-346,574,836-842,867,874-882,884-886,906-917,919-1029,1042-1043,1052,1056-1057,1063,1074-1075,1078,1125-1126,1176-1179,1219-1574
+lmcache/v1/multiprocess/transport/base.py
+  h_ed9443f8f568be 140-143
+lmcache/v1/multiprocess/transport/grpc_impl/_proto_gen/common_pb2.pyi
+  h_ed9443f8f568be 14,18,28,35
+lmcache/v1/multiprocess/transport/grpc_impl/protos/common.proto
+  h_ed9443f8f568be 14-15
+lmcache/v1/multiprocess/transport/grpc_impl/protos/engine_driven_service.proto
+  h_ed9443f8f568be 11-23,34,40,49-54,58
+lmcache/v1/platform/native_block_transfer.py
+  h_ed9443f8f568be 104-105,138,142,148-149
+tests/cli/commands/bench/test_server_bench.py
+  h_ed9443f8f568be 40,447
+tests/cli/commands/bench/test_trace_analyze_command.py
+  h_ed9443f8f568be 1-80
+tests/tools/data/trace_formats/lmcache.jsonl
+  h_ed9443f8f568be 1-4
+tests/tools/test_trace_analyze.py
+  h_ed9443f8f568be 1-255
+tests/v1/distributed/test_distributed_storage_manager.py
+  h_ed9443f8f568be 639-640,642-644,658-663,666,675,678-679,693-698,701
+tests/v1/distributed/test_fs_l2_adapter_keys.py
+  h_ed9443f8f568be 292,298,307-330
+tests/v1/distributed/test_memory_tags.py
+  h_ed9443f8f568be 179-188
+tests/v1/distributed/test_multi_l1.py
+  h_ed9443f8f568be 302-304,462-464,469-471
+tests/v1/distributed/test_prefetch_controller.py
+  h_ed9443f8f568be 30-32,118-119,127-128,667-668,677-679,689,696-698,1642-1823
+tests/v1/distributed/test_prefetch_task_spec.py
+  h_ed9443f8f568be 49
+tests/v1/mp_coordinator/mp_server_harness.py
+  h_ed9443f8f568be 50,603
+tests/v1/mp_observability/trace/test_codecs.py
+  h_ed9443f8f568be 14-16,157-178
+tests/v1/mp_observability/trace/test_recorder.py
+  h_ed9443f8f568be 31-32,235-253
+tests/v1/mp_scheduler_adapter_test_utils.py
+  h_ed9443f8f568be 1-109
+tests/v1/multiprocess/test_apc_covered_lookup.py
+  h_ed9443f8f568be 29-35,69,73,84,120-122,128-130,132-133,135-141,143,151
+tests/v1/multiprocess/test_async_engine_driven_transfer_context.py
+  h_ed9443f8f568be 6,522-655
+tests/v1/multiprocess/test_blend_observability.py
+  h_ed9443f8f568be 32,185,215,299
+tests/v1/multiprocess/test_blend_retrieve.py
+  h_ed9443f8f568be 20,663,704,871
+tests/v1/multiprocess/test_blend_store.py
+  h_ed9443f8f568be 42,200,226,630
+tests/v1/multiprocess/test_engine_driven_mixed_geometry.py
+  h_ed9443f8f568be 1-115
+tests/v1/multiprocess/test_engine_driven_multigroup.py
+  h_ed9443f8f568be 1-1206
+tests/v1/multiprocess/test_engine_driven_transfer.py
+  h_ed9443f8f568be 1087-1233,1639-1879
+tests/v1/multiprocess/test_free_locks.py
+  h_ed9443f8f568be 21,25-28,133,171,270,397,402,432-434,437-438,441,449-450,460-462,465-466,469-472,475,477,481,493
+tests/v1/multiprocess/test_futures.py
+  h_ed9443f8f568be 14,267-334
+tests/v1/multiprocess/test_grpc_transport.py
+  h_ed9443f8f568be 60,166-169,174-178,616,632-642
+tests/v1/multiprocess/test_lmcache_driven_missing_registration.py
+  h_ed9443f8f568be 22,43-53,86,165-167,236
+tests/v1/multiprocess/test_lookup_load_policy.py
+  h_ed9443f8f568be 59,75,79
+tests/v1/multiprocess/test_lookup_outcome_attribution.py
+  h_ed9443f8f568be 23,48,140
+tests/v1/multiprocess/test_lookup_request_trace.py
+  h_ed9443f8f568be 17,28-29,47
+tests/v1/multiprocess/test_native_state_alias_gpu.py
+  h_ed9443f8f568be 40,209,255,314
+tests/v1/multiprocess/test_native_state_lookup.py
+  h_ed9443f8f568be 162
+tests/v1/multiprocess/test_num_kv_readers.py
+  h_ed9443f8f568be 9,18
+tests/v1/multiprocess/test_p2p_controller.py
+  h_ed9443f8f568be 18-25,173-176,187,191-194
+tests/v1/multiprocess/test_packed_token_ids.py
+  h_ed9443f8f568be 1-164
+tests/v1/multiprocess/test_query_lookup_hits.py
+  h_ed9443f8f568be 15,29,61,119,125,133-134
+tests/v1/multiprocess/test_session.py
+  h_ed9443f8f568be 14,39-42,46,53,71,82,91,186,218,236,261,267,275,284,293,332
+tests/v1/multiprocess/test_tensor_wire.py
+  h_ed9443f8f568be 17,19,136-238
+tests/v1/multiprocess/test_unified_touch.py
+  h_ed9443f8f568be 24,206,229,262,303
+tests/v1/platform/test_native_block_transfer.py
+  h_ed9443f8f568be 157,166-188
+tests/v1/test_mp_connector_kv_roles.py
+  h_ed9443f8f568be 54,510-513,676-680,784-837
+tests/v1/test_mp_connector_mm_keys.py
+  h_ed9443f8f568be 38-41,210,265,295,368-370,390,449-456
+tests/v1/test_mp_lookup_state.py
+  h_ed9443f8f568be 1-480
+tests/v1/test_mp_nonblocking_lookup.py
+  h_ed9443f8f568be 21,25,28,30,44,46-47,111-113,120,163-166,181,188,209,214,220,239,269,271-272,283,302-304,307,309-310,324-390,414,444-467,472,474,501
+tests/v1/test_unified_sglang_mp_connector.py
+  h_ed9443f8f568be 25,254,280,1101,1105,1117
+tests/v1/test_vllm_dcp_support.py
+  h_ed9443f8f568be 18,138
+tests/v1/test_vllm_mp_adapter.py
+  h_ed9443f8f568be 39,49-55,188,308-310,427,443-457,841-843,877,913,924-927,959,989,1035,1143,1190,1357-1359,1389-1391
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b06dcfcf83675382b4479e3e92513a229600d835",
+  "prompts": {},
+  "humans": {
+    "h_ed9443f8f568be": {
+      "author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}
