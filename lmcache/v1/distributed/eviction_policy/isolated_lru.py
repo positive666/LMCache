@@ -24,7 +24,7 @@ import threading
 
 # First Party
 from lmcache.v1.distributed.api import ObjectKey
-from lmcache.v1.distributed.eviction import EvictionPolicy
+from lmcache.v1.distributed.eviction import EvictionByteBudget, EvictionPolicy
 from lmcache.v1.distributed.internal_api import (
     EvictionAction,
     EvictionDestination,
@@ -186,6 +186,8 @@ class IsolatedLRUEvictionPolicy(EvictionPolicy):
         expected_ratio: float,
         key_eligible_filter: Callable[[ObjectKey], bool] | None = None,
         cache_salt: str | None = None,
+        *,
+        byte_budget: EvictionByteBudget | None = None,
     ) -> list[EvictionAction]:
         """Select victims in LRU order, scoped to a single ``cache_salt``.
 
@@ -198,11 +200,16 @@ class IsolatedLRUEvictionPolicy(EvictionPolicy):
         Args:
             expected_ratio: Fraction of the bucket's tracked eviction weight
                 to evict, clamped to ``[0.0, 1.0]``. L2 keys are weighted by
-                bytes; callers without sizes use unit weight. If the target
-                rounds down to zero, at least one key is returned.
+                bytes when complete sizes differ; uniform or incomplete sizes
+                retain count-based rounding. A positive ratio selects at least
+                one eligible key when rounding produces a zero target.
             key_eligible_filter: Optional predicate — keys failing the
                 filter (e.g. locked) are skipped.
             cache_salt: The salt whose bucket to evict from. Required.
+            byte_budget: Optional byte target and sizing callback, overriding
+                the ratio and tracked L2 weights. Nonpositive callback sizes
+                are skipped. Only this salt's reclaimable keys count toward
+                the target; whole objects are selected in LRU order.
 
         Returns:
             A list with at most one ``EvictionAction`` (one per
@@ -224,42 +231,52 @@ class IsolatedLRUEvictionPolicy(EvictionPolicy):
             if not order:
                 return []
 
-            expected_ratio = max(0.0, min(1.0, expected_ratio))
-            keys_to_evict: list[ObjectKey] = []
             # n * sum(size^2) == sum(size)^2 iff all sizes are equal.
-            if (
-                cache_salt not in self._per_salt_total_size
-                or self._per_salt_unknown_size_count[cache_salt] > 0
-                or len(order) * self._per_salt_total_size_squared[cache_salt]
-                == self._per_salt_total_size[cache_salt] ** 2
-            ):
-                target_count = int(len(order) * expected_ratio)
-                if expected_ratio > 0 and target_count == 0:
-                    target_count = 1
-                if target_count == 0:
-                    return []
+            use_stored_sizes = (
+                byte_budget is None
+                and cache_salt in self._per_salt_total_size
+                and self._per_salt_unknown_size_count[cache_salt] == 0
+                and len(order) * self._per_salt_total_size_squared[cache_salt]
+                != self._per_salt_total_size[cache_salt] ** 2
+            )
+            if byte_budget is not None:
+                target = byte_budget.target_bytes
+            else:
+                expected_ratio = max(0.0, min(1.0, expected_ratio))
+                tracked_weight = (
+                    self._per_salt_total_size[cache_salt]
+                    if use_stored_sizes
+                    else len(order)
+                )
+                target = int(tracked_weight * expected_ratio)
+                if expected_ratio > 0 and target == 0:
+                    target = 1
+            if target <= 0:
+                return []
+
+            keys_to_evict: list[ObjectKey] = []
+            if byte_budget is None and not use_stored_sizes:
                 for key in order:
                     if key_eligible_filter is not None and not key_eligible_filter(key):
                         continue
                     keys_to_evict.append(key)
-                    if len(keys_to_evict) >= target_count:
+                    if len(keys_to_evict) >= target:
                         break
             else:
-                target_size = int(
-                    self._per_salt_total_size[cache_salt] * expected_ratio
-                )
-                if expected_ratio > 0 and target_size == 0:
-                    target_size = 1
-                if target_size == 0:
-                    return []
-                selected_size = 0
+                selected_weight = 0
                 for key, size in order.items():
                     if key_eligible_filter is not None and not key_eligible_filter(key):
                         continue
-                    assert size is not None
+                    if byte_budget is not None:
+                        weight = byte_budget.get_evictable_size(key)
+                        if weight <= 0:
+                            continue
+                    else:
+                        assert size is not None
+                        weight = size
                     keys_to_evict.append(key)
-                    selected_size += size
-                    if selected_size >= target_size:
+                    selected_weight += weight
+                    if selected_weight >= target:
                         break
 
             if not keys_to_evict:

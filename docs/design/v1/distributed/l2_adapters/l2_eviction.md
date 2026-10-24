@@ -21,6 +21,17 @@ rounding. This target includes tracked keys excluded by an eligibility filter;
 it is not a fraction of eligible bytes. Fleet callers without size events
 remain in count mode.
 
+The selection API also accepts an explicit `EvictionByteBudget`, shared with
+L1. An explicit budget overrides the ratio and stored weights. L2 still owns
+its per-key weights and unknown-size state; isolated LRU checkpoints preserve
+complete weights. Any callback reading these weights must use the policy's
+already-protected local state, without entering a manager or adapter lock or
+reentering the policy.
+
+A zero callback result means the object cannot be reclaimed and is skipped.
+The default mixed-size L2 path preserves zero-byte keys in its LRU prefix;
+unknown sizes remain a separate state that selects count mode.
+
 Before attempting deletion, the controller calls `on_eviction_attempted` to
 rotate selected keys behind other candidates, including when deletion fails.
 This is neither an access event nor evidence of deletion. Batches may combine
@@ -104,7 +115,7 @@ Abstract interface for receiving L2 adapter events:
 
 ```python
 class L2AdapterListener:
-    def on_l2_keys_stored(self, keys: list[ObjectKey]): ...
+    def on_l2_keys_stored(self, keys: list[ObjectKey], sizes: list[int]): ...
     def on_l2_keys_accessed(self, keys: list[ObjectKey]): ...
     def on_l2_keys_deleted(self, keys: list[ObjectKey]): ...
 ```
@@ -143,7 +154,7 @@ to an `EvictionPolicy` via composition:
 
 | Callback               | Delegates to              |
 |------------------------|---------------------------|
-| `on_l2_keys_stored`    | `policy.on_keys_created`  |
+| `on_l2_keys_stored`    | `policy.on_keys_created_with_sizes` |
 | `on_l2_keys_accessed`  | `policy.on_keys_touched`  |
 | `on_l2_keys_deleted`   | `policy.on_keys_removed`  |
 

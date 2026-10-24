@@ -10,7 +10,7 @@ import threading
 
 # First Party
 from lmcache.v1.distributed.api import ObjectKey
-from lmcache.v1.distributed.eviction import EvictionPolicy
+from lmcache.v1.distributed.eviction import EvictionByteBudget, EvictionPolicy
 from lmcache.v1.distributed.internal_api import (
     EvictionAction,
     EvictionDestination,
@@ -188,22 +188,29 @@ class LRUEvictionPolicy(EvictionPolicy):
         expected_ratio: float,
         key_eligible_filter: Callable[[ObjectKey], bool] | None = None,
         cache_salt: str | None = None,
+        *,
+        byte_budget: EvictionByteBudget | None = None,
     ) -> list[EvictionAction]:
         """
-        Get the eviction actions to evict objects from L1 cache.
+        Get eviction actions for objects tracked by this policy.
         Returns keys in LRU order (least recently used first).
 
         Args:
             expected_ratio (float): A hint indicating approximately what fraction
                 of tracked eviction weight should be evicted. L2 keys are weighted
-                by bytes; callers without sizes use unit weight. Value should be in
-                range [0.0, 1.0].
+                by bytes when complete sizes differ; uniform or incomplete sizes
+                retain count-based rounding. Value should be in range [0.0, 1.0].
             key_eligible_filter: An optional callable that takes an ObjectKey
                 and returns True if the key is eligible for eviction. When
                 provided, keys for which the filter returns False will be
                 skipped. This is useful for skipping locked keys that
                 cannot be deleted.
             cache_salt: Ignored by LRU policy (not user-level).
+            byte_budget: Optional byte target and sizing callback, overriding
+                the ratio and tracked L2 weights. Nonpositive callback sizes
+                are skipped. Whole objects are selected in LRU order until
+                the target is reached or eligible keys run out; the final
+                object may exceed the target.
 
         Returns:
             list[EvictionAction]: The eviction actions to perform. Each
@@ -213,46 +220,52 @@ class LRUEvictionPolicy(EvictionPolicy):
             The eviction action may not be successfully executed, or it
             may be executed asynchronously. Therefore, the eviction policy
             should not assume that the objects are evicted immediately, but
-            it should use `on_keys_deleted` to know when the objects are actually
+            it should use `on_keys_removed` to know when the objects are actually
             deleted.
         """
         with self._lock:
             if not self._order:
                 return []
 
-            # Clamp expected_ratio to valid range
-            expected_ratio = max(0.0, min(1.0, expected_ratio))
+            use_stored_sizes = byte_budget is None and not self._sizes_are_uniform()
+            if byte_budget is not None:
+                target = byte_budget.target_bytes
+            else:
+                expected_ratio = max(0.0, min(1.0, expected_ratio))
+                if use_stored_sizes:
+                    assert self._total_size is not None
+                    tracked_weight = self._total_size
+                else:
+                    tracked_weight = len(self._order)
+                target = int(tracked_weight * expected_ratio)
+                if expected_ratio > 0 and target == 0:
+                    target = 1
+            if target <= 0:
+                return []
 
             keys_to_evict: list[ObjectKey] = []
-            if self._sizes_are_uniform():
-                # Preserve the original count-based rounding exactly when
-                # object sizes do not differ.
-                target_count = int(len(self._order) * expected_ratio)
-                if expected_ratio > 0 and target_count == 0:
-                    target_count = 1
-                if target_count == 0:
-                    return []
+            if byte_budget is None and not use_stored_sizes:
                 for key in self._order:
                     if key_eligible_filter is not None and not key_eligible_filter(key):
                         continue
                     keys_to_evict.append(key)
-                    if len(keys_to_evict) >= target_count:
+                    if len(keys_to_evict) >= target:
                         break
             else:
-                assert self._total_size is not None
-                target_size = int(self._total_size * expected_ratio)
-                if expected_ratio > 0 and target_size == 0:
-                    target_size = 1
-                if target_size == 0:
-                    return []
-                selected_size = 0
+                selected_weight = 0
                 for key, size in self._order.items():
                     if key_eligible_filter is not None and not key_eligible_filter(key):
                         continue
-                    assert size is not None
+                    if byte_budget is not None:
+                        weight = byte_budget.get_evictable_size(key)
+                        if weight <= 0:
+                            continue
+                    else:
+                        assert size is not None
+                        weight = size
                     keys_to_evict.append(key)
-                    selected_size += size
-                    if selected_size >= target_size:
+                    selected_weight += weight
+                    if selected_weight >= target:
                         break
 
             if not keys_to_evict:
