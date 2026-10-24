@@ -1,0 +1,27 @@
+lmcache/integration/vllm/lmcache_mp_connector.py
+  s_d6988063cfa454::t_a8711a6f06dbc0 763-764,1637,1639-1642,1657-1662,1686-1689,1718-1725
+  s_d6988063cfa454::t_6a69fb630633c0 1726
+tests/v1/test_mp_connector_kv_roles.py
+  s_d6988063cfa454::t_8d9f6a8d6edfe1 470-508
+  s_d6988063cfa454::t_28621afa839b08 403-404,408,410,442
+  s_d6988063cfa454::t_8f3252c82fc7bd 26,40,55-56,58,405-407,409,411-441,443-469,509-589
+  s_d6988063cfa454::t_f19f5a1d854e41 590-591
+lmcache/integration/vllm/vllm_multi_process_adapter.py
+  s_d6988063cfa454::t_8d9f6a8d6edfe1 2587-2589
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "401e030cba6ea212ebb6a0eb506b3c6b53e3cf3a",
+  "prompts": {},
+  "sessions": {
+    "s_d6988063cfa454": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f1cb-29bf-7ea3-8651-a9a0ec4a111b",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}
