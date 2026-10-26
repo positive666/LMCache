@@ -1,0 +1,24 @@
+lmcache/integration/vllm/vllm_multi_process_adapter.py
+  s_d6988063cfa454::t_e735402fec6419 702-709,843-845,976-979,1016-1019,1067-1070,1080-1084,1086,1106-1108,1110,1231,1237,1327-1366
+  s_d6988063cfa454::t_c9de24d91c8c3b 1367
+docs/design/integration/vllm/mp_lookup_state.md
+  s_d6988063cfa454::t_63f40e29f1b054 15-16,132-167
+tests/v1/test_mp_nonblocking_lookup.py
+  s_d6988063cfa454::t_63f40e29f1b054 496-497,499-501,507-606
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "a75913ea74855406dfd9433c470232a725a87ce6",
+  "prompts": {},
+  "sessions": {
+    "s_d6988063cfa454": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f1cb-29bf-7ea3-8651-a9a0ec4a111b",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}
