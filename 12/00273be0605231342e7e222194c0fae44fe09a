@@ -1,0 +1,49 @@
+lmcache/v1/distributed/l1_manager.py
+  s_0cfea5a1c85359::t_93554c36c77336 156-163,1529-1530,1541-1542
+.github/workflows/cpu_device.yml
+  s_628796156d1928::t_ac9f3d3811adf3 263
+.github/workflows/test.yml
+  s_628796156d1928::t_c70e62dbf0a42b 235
+csrc/storage_backends/redis/connector.cpp
+  s_628796156d1928::t_17587709536b92 11-16,141-144
+docs/design/v1/multiprocess/transport/request_transport.md
+  s_628796156d1928::t_c1e6be34324205 40-49,104,137
+lmcache/v1/multiprocess/transport/errors.py
+  s_628796156d1928::t_3c6c1a7680347c 1-39
+lmcache/v1/multiprocess/transport/grpc_impl/client.py
+  s_628796156d1928::t_25223466d3b9a9 9,24-27,51,61-68,276,295-298
+requirements/grpc_native.txt
+  s_628796156d1928::t_473b6f484da283 2
+tests/inprocess/v1/storage_backend/test_resp_native_connector.py
+  s_628796156d1928::t_cf3962aaba24ea 1-84
+tests/v1/distributed/test_l1_manager.py
+  s_628796156d1928::t_f5645bdcb2a3d5 2376-2449
+tests/v1/multiprocess/test_grpc_native_server.py
+  s_628796156d1928::t_255c75b2daf94a 37-40,86-87,136,163,179,232,419,511-512,515,517,770,787
+tests/v1/multiprocess/test_grpc_transport.py
+  s_628796156d1928::t_aa6636c9ad6915 62-65,718-758,915
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1200273be0605231342e7e222194c0fae44fe09a",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    },
+    "s_628796156d1928": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a13d45-3077-79a1-bb0e-aede37dc52f6",
+        "model": "unknown"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}
