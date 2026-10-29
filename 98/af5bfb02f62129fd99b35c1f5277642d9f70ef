@@ -1,0 +1,19 @@
+tests/v1/multiprocess/test_event_ipc_handle_path.py
+  s_0cfea5a1c85359::t_435257dfef76f0 19-20,32-33,415-519
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "98af5bfb02f62129fd99b35c1f5277642d9f70ef",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}
