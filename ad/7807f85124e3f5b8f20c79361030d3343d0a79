@@ -1,0 +1,22 @@
+tests/v1/distributed/test_mooncake_process_client.py
+  s_0cfea5a1c85359::t_1461f2098515b0 25,180-193
+  s_0cfea5a1c85359::t_a1526085865f1d 194-195
+docs/design/v1/distributed/l2_adapters/mooncake_process_client.md
+  s_0cfea5a1c85359::t_1461f2098515b0 53-58
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "ad7807f85124e3f5b8f20c79361030d3343d0a79",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}
