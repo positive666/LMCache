@@ -1,0 +1,23 @@
+tests/v1/distributed/test_prefetch_controller.py
+  s_23deada145cdd4::t_85bfaefe3021e7 37,784-831
+  s_23deada145cdd4::t_c5cfd9ff2b7c2f 832-836
+lmcache/v1/distributed/storage_controllers/prefetch_controller.py
+  s_23deada145cdd4::t_694a0a29dfd257 913-914
+  s_23deada145cdd4::t_6f263fd21fc672 355,360,915,917
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "d03efd9b9cdd2475dadbe15b97d8691df693c2f8",
+  "prompts": {},
+  "sessions": {
+    "s_23deada145cdd4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fcacc-52bf-7391-b911-db9e0ea2e8d1",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}

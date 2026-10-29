@@ -1,0 +1,19 @@
+tests/v1/test_mp_nonblocking_lookup.py
+  s_d6988063cfa454::t_a0bdc93e92d529 683-686,690
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "df5d100221500f5e4a9eab84173b59551d904665",
+  "prompts": {},
+  "sessions": {
+    "s_d6988063cfa454": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f1cb-29bf-7ea3-8651-a9a0ec4a111b",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}
