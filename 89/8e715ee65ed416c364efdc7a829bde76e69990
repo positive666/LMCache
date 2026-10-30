@@ -1,0 +1,20 @@
+docs/source/mp/l2_storage/mooncake_store.rst
+  s_0cfea5a1c85359::t_6cbc342bacde6e 149
+  s_0cfea5a1c85359::t_84bda050977303 147-148,150-232
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "898e715ee65ed416c364efdc7a829bde76e69990",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}
