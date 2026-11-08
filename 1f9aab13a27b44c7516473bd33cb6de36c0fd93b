@@ -1,0 +1,67 @@
+lmcache/v1/distributed/memory_manager/l1_memory_manager.py
+  s_0cfea5a1c85359::t_d5816162ff00ad 223,245
+  s_0cfea5a1c85359::t_dffb6bcc6ccfb6 216
+docs/source/mp/l2_storage/mooncake_store.rst
+  s_0cfea5a1c85359::t_b144e9bad137b7 62,112-146
+lmcache/v1/distributed/config.py
+  s_0cfea5a1c85359::t_d5816162ff00ad 195-197
+tests/v1/distributed/test_l1_memory_manager.py
+  s_0cfea5a1c85359::t_370dc2c88e850b 21,24,58-78
+docs/design/v1/distributed/l2_adapters/mooncake_process_client.md
+  s_0cfea5a1c85359::t_daea940f7237f4 6-9,68-72,93,97-98
+lmcache/v1/distributed/l2_adapters/mooncake_store_l2_adapter.py
+  s_0cfea5a1c85359::t_d5816162ff00ad 34-39,49-50,85-86,94-95,118-123,137-138,185-197
+  s_0cfea5a1c85359::t_77d488c4789944 75-77,102,160-163
+tests/v1/distributed/test_mooncake_store_l2_adapter.py
+  s_0cfea5a1c85359::t_557ec54ae26e23 11,13-14,17,19-20,45,50-51,64-66,70-74,78-83,88,91-95,99-111,137-138,145-149,159-166,181-185,187-196,198-204,206-220
+  s_0cfea5a1c85359::t_620d74fed6ec73 49,89-90,167-180
+  s_0cfea5a1c85359::t_7b45bb9851c366 30-32,43-44,61-63,67-69,75-77,96-98,115-136,139-144,197,205
+  s_0cfea5a1c85359::t_dffb6bcc6ccfb6 84-87,112-114,150-158
+  s_0cfea5a1c85359::t_6d5983f8e7f20d 186
+lmcache/v1/distributed/l2_adapters/native_connector_l2_adapter.py
+  s_0cfea5a1c85359::t_8df4141e746143 25,173-230
+  s_0cfea5a1c85359::t_1006b3cf568c10 231-232
+tests/v1/distributed/test_native_connector_l2_adapter.py
+  s_0cfea5a1c85359::t_77d488c4789944 41,56,63,80
+  s_0cfea5a1c85359::t_20aad8daa78a3b 47-55,57-62,64-79,81
+docs/design/v1/distributed/l2_adapters/mooncake_resilience.md
+  s_0cfea5a1c85359::t_daea940f7237f4 5-8,103-105
+lmcache/v1/distributed/l1_manager.py
+  s_0cfea5a1c85359::t_39d362a16012c6 978-980
+docs/design/v1/distributed/l2_adapters/mooncake_process_adapter.md
+  s_0cfea5a1c85359::t_daea940f7237f4 1-60
+tests/v1/distributed/test_prefetch_lifecycle.py
+  s_0cfea5a1c85359::t_6d5983f8e7f20d 138-142,147-149,344
+lmcache/v1/distributed/internal_api.py
+  s_0cfea5a1c85359::t_d5816162ff00ad 62,69
+lmcache/v1/distributed/l2_adapters/mooncake_process_adapter.py
+  s_0cfea5a1c85359::t_557ec54ae26e23 143,167,170,201-205
+  s_0cfea5a1c85359::t_d5816162ff00ad 1-12,19-20,24-142,144-145,150-166,168-169,174-200,213-220
+  s_0cfea5a1c85359::t_6d5983f8e7f20d 13-18,21-23,146-149,171-173,206-212
+tests/v1/multiprocess/test_event_ipc_handle_path.py
+  s_628796156d1928::t_ea70d66ca4ce4a 28,31
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "1f9aab13a27b44c7516473bd33cb6de36c0fd93b",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    },
+    "s_628796156d1928": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a13d45-3077-79a1-bb0e-aede37dc52f6",
+        "model": "unknown"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}

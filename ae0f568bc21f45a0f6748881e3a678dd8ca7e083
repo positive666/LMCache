@@ -1,0 +1,37 @@
+tests/v1/mp_coordinator/test_eviction_controller.py
+  s_23deada145cdd4::t_baabf98e0bf548 433-454
+  s_23deada145cdd4::t_9f106547e85b98 432
+tests/v1/distributed/test_lru_eviction_policy.py
+  s_23deada145cdd4::t_f8787364f9a16c 217-250
+tests/v1/distributed/test_cache_salt_l2_eviction.py
+  s_23deada145cdd4::t_baabf98e0bf548 177-196
+lmcache/v1/mp_coordinator/controllers/eviction_controller.py
+  s_23deada145cdd4::t_d8616106ce7c16 335
+lmcache/v1/distributed/eviction_policy/lru.py
+  s_23deada145cdd4::t_d8616106ce7c16 167-179,237-244
+tests/v1/distributed/test_isolated_lru_eviction_policy.py
+  s_23deada145cdd4::t_f8787364f9a16c 125-159
+lmcache/v1/distributed/eviction_policy/isolated_lru.py
+  s_23deada145cdd4::t_d8616106ce7c16 151-164,228-235
+lmcache/v1/distributed/eviction.py
+  s_23deada145cdd4::t_d8616106ce7c16 139-147
+  s_23deada145cdd4::t_db48907c2b445c 148-149
+lmcache/v1/distributed/storage_controllers/eviction_controller.py
+  s_23deada145cdd4::t_d8616106ce7c16 345,402
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "ae0f568bc21f45a0f6748881e3a678dd8ca7e083",
+  "prompts": {},
+  "sessions": {
+    "s_23deada145cdd4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fcacc-52bf-7391-b911-db9e0ea2e8d1",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}

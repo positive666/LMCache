@@ -1,0 +1,58 @@
+lmcache/v1/multiprocess/session.py
+  s_d6988063cfa454::t_aaae0cc93bbd5b 17-18,60-61,171-172,189-196,244,247-252,254-256,258-293,295-340
+docs/design/v1/distributed/l1_manager_interface.md
+  s_d6988063cfa454::t_fb9f538636734c 23-33
+lmcache/v1/distributed/l1_manager.py
+  s_d6988063cfa454::t_b28476f2609901 914-915,1028-1029,1116
+  s_d6988063cfa454::t_f5ef59fb33dbfd 8,143-145,417-509,575-579,940,1074,1120-1124
+lmcache/v1/multiprocess/modules/lmcache_driven_transfer.py
+  s_d6988063cfa454::t_7c805b0ec3831d 21-26,227-231,291-292,315,317-319,1067-1068,1072-1073,1075-1090,1096-1097,1117-1118,1121-1136
+  s_d6988063cfa454::t_175e2204183dcf 316,1074
+  s_d6988063cfa454::t_dc0b506c32b352 1137
+lmcache/v1/distributed/internal_api.py
+  s_d6988063cfa454::t_08c1f6e1503705 34-49,307-323,325
+  s_d6988063cfa454::t_e39af590caa551 33
+  s_d6988063cfa454::t_0ad1748886ee02 324
+docs/design/v1/distributed/l1_manager.md
+  s_d6988063cfa454::t_79d38abcff3604 102-144
+lmcache/v1/multiprocess/modules/lookup.py
+  s_d6988063cfa454::t_a5dd72152a0d5f 557-558
+lmcache/v1/distributed/storage_manager.py
+  s_d6988063cfa454::t_26fcf9906dcbe9 39,101-102,596,1419-1542,1544
+  s_d6988063cfa454::t_0a7611bcd174d7 1543
+  s_d6988063cfa454::t_a688aa2c97d948 1545
+tests/v1/distributed/test_multi_l1.py
+  s_d6988063cfa454::t_547e73fdc28aee 24,27-30
+  s_d6988063cfa454::t_0a53dd36674630 534-567
+tests/v1/distributed/test_l1_interface.py
+  s_d6988063cfa454::t_1ecc1bda006892 17,136-210
+tests/v1/multiprocess/test_free_locks.py
+  s_d6988063cfa454::t_5c0e1f7869f5e8 146-147,165-168,186-189,209,228,249,270,297,318,363-364,369-372,394,425,528,548
+tests/v1/multiprocess/test_session.py
+  s_d6988063cfa454::t_1c87229711957a 5,13
+  s_d6988063cfa454::t_b61a28216ee9a0 363-434
+tests/v1/multiprocess/test_lookup_lock_generation.py
+  s_d6988063cfa454::t_36ba9f1536382d 38,298,339
+  s_d6988063cfa454::t_8b1f23f5cd411e 8,17,32-35,83-84,93,177-297,299-338,340-379
+tests/v1/multiprocess/test_lmcache_driven_transfer_skip.py
+  s_d6988063cfa454::t_af68716b62c6ad 20,172,176,179-183,186-188,211,286,341,349-350,363-365
+  s_d6988063cfa454::t_ddd7f25ed26177 173-174,177,184-185,369-371
+tests/v1/multiprocess/test_lmcache_driven_missing_registration.py
+  s_d6988063cfa454::t_458511f5cf7a0f 6,18,79-84,155,177-179,259
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "85025e7f295e1aff3b1ba27b6e42bad866078ff2",
+  "prompts": {},
+  "sessions": {
+    "s_d6988063cfa454": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f1cb-29bf-7ea3-8651-a9a0ec4a111b",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}

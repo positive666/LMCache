@@ -1,0 +1,48 @@
+tests/v1/distributed/test_bigtable_l2_adapter.py
+  s_0cfea5a1c85359::t_487da1f8bd171d 222,232
+  s_0cfea5a1c85359::t_131ef10e4b8a96 223,227-231,233-258
+  s_0cfea5a1c85359::t_12c61bcfcb0632 224-226
+  s_0cfea5a1c85359::t_c2ee7ddc019018 584-586
+lmcache/v1/distributed/l2_adapters/bigtable_l2_adapter.py
+  s_0cfea5a1c85359::t_0293c2a225ee63 818,827-828,831
+  s_0cfea5a1c85359::t_f25c2139a5880a 822-823,825-826,829-830
+lmcache/v1/distributed/l2_adapters/base.py
+  s_0cfea5a1c85359::t_f76ad0c50ca426 228-233,241-244
+docs/source/mp/configuration.rst
+  s_0cfea5a1c85359::t_51bfe06be0c585 632-637
+tests/v1/distributed/test_store_controller.py
+  s_0cfea5a1c85359::t_1da7f07f77e10a 14,143-145,223-225,291,293,336-338,375-377,401-437
+  s_0cfea5a1c85359::t_f50e8d3b660473 33,367-369,374,378-379
+  s_0cfea5a1c85359::t_a6b6a4f93bd232 16,26,35,52-53,55,138-142,146,153,441-442
+  s_0cfea5a1c85359::t_0293c2a225ee63 292
+  s_0cfea5a1c85359::t_f25c2139a5880a 239-242,245,354-366,370-373,380-400,438
+  s_0cfea5a1c85359::t_895df47c5d5ebc 178-203,207-221,226-229,232-238,243-244,246-253,264-272,276-278,282-285,290,295-319,323-335,339-353,439-440
+  s_0cfea5a1c85359::t_92a5554d41ecae 286-289,294
+  s_0cfea5a1c85359::t_487da1f8bd171d 13,136,204-206,279-281,320-322
+  s_0cfea5a1c85359::t_f6e1514ac3aba4 222,230-231
+  s_0cfea5a1c85359::t_0c3f8e6f1c5a63 254-263,273-275
+lmcache/v1/distributed/storage_controllers/store_controller.py
+  s_0cfea5a1c85359::t_1da7f07f77e10a 487-489
+  s_0cfea5a1c85359::t_2f15e39831a6a2 640,664-665
+  s_0cfea5a1c85359::t_3a92f196e901fa 16,49,655
+  s_0cfea5a1c85359::t_f76ad0c50ca426 87,103-108,142-143,145,168-172,197-198,221,223,331,333-335,337-339,390-391,393,417-418,420,471,482,486,490-492,511,636-637,650-654,656-663,666,730,736,802,808
+  s_0cfea5a1c85359::t_a6b6a4f93bd232 354,380,411-413
+docs/design/v1/distributed/storage_controllers/store_controller.md
+  s_0cfea5a1c85359::t_51bfe06be0c585 1-69
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "efedc5f14aef0f2dabd8b7545a3fd49c001b6cf9",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}

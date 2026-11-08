@@ -1,0 +1,38 @@
+tests/v1/test_mp_nonblocking_lookup.py
+  s_d6988063cfa454::t_beb70350b7650c 510,532
+  s_d6988063cfa454::t_c6c2e0f3e45b2f 94-96,340,349-350,511-515,518-531,533-597
+  s_d6988063cfa454::t_a7711f33a0eaf8 598-619,621-623
+tests/v1/test_mp_lookup_state.py
+  s_d6988063cfa454::t_c6c2e0f3e45b2f 451-468
+lmcache/integration/vllm/vllm_multi_process_adapter.py
+  s_d6988063cfa454::t_c6c2e0f3e45b2f 1154-1156
+  s_d6988063cfa454::t_d7518b09b6b671 699-760,832-834,1075,1078-1079,1082-1086,1186,1188,1191,1194,1196-1200,1203-1204,1206-1207,1209-1210,1212-1214
+docs/design/integration/vllm/mp_lookup_state.md
+  s_d6988063cfa454::t_c6c2e0f3e45b2f 17-18,43-44,108-130
+lmcache/integration/vllm/mp_lookup_state.py
+  s_853042957b9c41::t_a469eac797bebb 129-131,139-144,148-149,153,159,167-198,233,260,362,378,407,445-455,479-486
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "b5d4bb529946b1bf915729bfd1b5ae952810e850",
+  "prompts": {},
+  "sessions": {
+    "s_853042957b9c41": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a14281-9e4d-7612-843d-35c1e2938ddd",
+        "model": "unknown"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    },
+    "s_d6988063cfa454": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f1cb-29bf-7ea3-8651-a9a0ec4a111b",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}

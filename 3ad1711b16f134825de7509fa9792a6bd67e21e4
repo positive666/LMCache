@@ -1,0 +1,23 @@
+tests/v1/test_mp_connector_kv_roles.py
+  s_d6988063cfa454::t_8cde3c803c54c3 411,417,422-423,449,456,477,481,507,516,519,521,531-532,552-555,565-566
+  s_d6988063cfa454::t_becb6870ec6435 567
+lmcache/integration/vllm/lmcache_mp_connector.py
+  s_d6988063cfa454::t_cc0858cb78c734 1239
+  s_d6988063cfa454::t_8cde3c803c54c3 1242-1245,1645-1647
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "3ad1711b16f134825de7509fa9792a6bd67e21e4",
+  "prompts": {},
+  "sessions": {
+    "s_d6988063cfa454": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f1cb-29bf-7ea3-8651-a9a0ec4a111b",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}
