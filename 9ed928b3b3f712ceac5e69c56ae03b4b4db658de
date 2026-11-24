@@ -1,0 +1,33 @@
+tests/v1/distributed/test_mooncake_process_client.py
+  s_0cfea5a1c85359::t_a9593a89f3d3f8 196,217-218,403-411,419-432,440-484,489-490
+  s_0cfea5a1c85359::t_bc84535aac2cc4 15,31-35,38-44
+  s_0cfea5a1c85359::t_1ed927fa6f978e 8,11-13,28,210-213,412-418,433-439,486,494-509
+  s_0cfea5a1c85359::t_e20bd8588e69f0 37
+  s_0cfea5a1c85359::t_6f89ba6b53d274 1-7,9-10,14,16-27,29-30,36,45-55,58-195,197-205,207-209,214-216,219-402,510-513
+  s_0cfea5a1c85359::t_6d648ec2fb9519 56-57,206,485,487-488,491-493
+lmcache/v1/distributed/l2_adapters/mooncake_process_client.py
+  s_0cfea5a1c85359::t_55db2fa94924ef 284,474,480
+  s_0cfea5a1c85359::t_e304e6401fab91 361-365,543-544
+  s_0cfea5a1c85359::t_28ee455b9415fd 34,37,299-302,666
+  s_0cfea5a1c85359::t_c4b2f4c8889af6 1-8,10-11,16-33,35-36,38-115,236-283,285-298,303-360,366-375,443-473,478-479,481-499,507-510,512-542,545-665,667-681
+  s_0cfea5a1c85359::t_08d0448ffad0ee 121-134
+  s_0cfea5a1c85359::t_bdfa4f4c565a13 9,12-15,116-120,135-235,376-442,475-477,500-506,511
+docs/design/v1/distributed/l2_adapters/mooncake_process_client.md
+  s_0cfea5a1c85359::t_45589366c3310a 1-127
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "9ed928b3b3f712ceac5e69c56ae03b4b4db658de",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}

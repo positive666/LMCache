@@ -1,0 +1,55 @@
+lmcache/v1/distributed/eviction.py
+  s_0dd0c9f7973d90::t_05628715bfb103 9,22-40,188-189,210-215
+lmcache/v1/distributed/eviction_policy/isolated_lru.py
+  s_0dd0c9f7973d90::t_0596622922a322 258,263,266,270-276,278-279
+  s_0dd0c9f7973d90::t_ac232845ddca4f 27,189-190,203-205,209-212,235-257
+docs/design/v1/distributed/l2_adapters/l2_eviction.md
+  s_0dd0c9f7973d90::t_05628715bfb103 24-34,118,157
+tests/v1/distributed/test_eviction_byte_budget.py
+  s_0dd0c9f7973d90::t_46673837b7c043 221-233,235,238,241,243-244
+  s_0dd0c9f7973d90::t_467fd1d7bdefb0 1-220,236-237,239-240,242,245-271
+  s_0dd0c9f7973d90::t_fc741fac8b8b43 234
+lmcache/v1/distributed/eviction_policy/lru.py
+  s_0dd0c9f7973d90::t_ac232845ddca4f 13,191-192,195,201-202,209-213,223,230-244
+  s_0dd0c9f7973d90::t_0596622922a322 247,252,255,259-265,267-268
+docs/design/v1/distributed/storage_controllers/l1_eviction.md
+  s_0dd0c9f7973d90::t_05628715bfb103 1-55
+docs/source/mp/configuration.rst
+  s_8ac9d707bc8c46::t_6c12c0463becd1 660-669
+lmcache/v1/distributed/eviction_policy/arc.py
+  s_8ac9d707bc8c46::t_0281614e7a25ac 11,26-30,199-200,210-212,228-229,238,243,249,255,259,266-269,306-307,313-315
+lmcache/v1/distributed/eviction_policy/noop.py
+  s_8ac9d707bc8c46::t_b3184b680e52de 15,49-50,52-62
+lmcache/v1/distributed/internal_api.py
+  s_8ac9d707bc8c46::t_c12aaf7331fa63 338-353
+lmcache/v1/distributed/l1_manager.py
+  s_8ac9d707bc8c46::t_cd80195f66f5f7 989-1025
+lmcache/v1/distributed/storage_controllers/eviction_controller.py
+  s_8ac9d707bc8c46::t_2df2553be40516 9,18-22,167-173,175,199-202
+tests/v1/distributed/test_l1_eviction_byte_budget.py
+  s_8ac9d707bc8c46::t_e45716ef4d0136 1-179
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "31e7fb23ccfa7dd80902edad7926f54f6496f638",
+  "prompts": {},
+  "sessions": {
+    "s_0dd0c9f7973d90": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0faf8-9cd7-7ec2-aa36-721e47a1014f",
+        "model": "gpt-6.1-sol"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    },
+    "s_8ac9d707bc8c46": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1573f-e8ca-7c73-9df6-e466f6502fea",
+        "model": "unknown"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}

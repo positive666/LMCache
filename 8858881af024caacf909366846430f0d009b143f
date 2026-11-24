@@ -1,0 +1,43 @@
+lmcache/v1/distributed/l1_manager.py
+  s_0cfea5a1c85359::t_7cfb2fd6c930e7 149-155,672,736-789,814,896,963-964,978-979,1027,1030-1031,1042-1047,1054-1059,1061-1062,1101-1103,1180-1182,1193-1194,1208-1209,1550,1558-1560,1575,1579-1580,1590
+lmcache/v1/distributed/storage_controllers/prefetch_controller.py
+  s_0cfea5a1c85359::t_7cfb2fd6c930e7 416-419,652-654,662-663,666-670,822,824-828,830-832,916-926,964-965,976-977,995-997,1103-1106,1449-1450,1462-1475,1590,1592-1593,1609,1615,1620,1624,1630-1637,1670-1671,1678-1688,1692-1716,1826-1829,1839-1864,1874-1875,1877
+docs/source/mp/configuration.rst
+  s_0cfea5a1c85359::t_7cfb2fd6c930e7 638-642
+docs/design/v1/distributed/l1_manager.md
+  s_628796156d1928::t_022e66dcfb3201 49-50,52-58,62-72
+docs/design/v1/distributed/l1_manager_interface.md
+  s_628796156d1928::t_3abbd27fa871b5 13-14
+docs/design/v1/distributed/storage_controllers/prefetch_controller.md
+  s_628796156d1928::t_2fcb73c0cca1c6 46-48,152-153,155-159,186-196,229,277-281
+lmcache/v1/distributed/internal_api.py
+  s_628796156d1928::t_e794961ef31d09 349-382,403
+lmcache/v1/mp_observability/subscribers/metrics/l2_failures.py
+  s_628796156d1928::t_41117f60b67a6b 16-17,20,51
+tests/v1/distributed/test_prefetch_lifecycle.py
+  s_628796156d1928::t_e3f04b7828d9e8 1-410
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8858881af024caacf909366846430f0d009b143f",
+  "prompts": {},
+  "sessions": {
+    "s_0cfea5a1c85359": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a12120-5b7e-7c62-ade2-b3446d338fc4",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    },
+    "s_628796156d1928": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a13d45-3077-79a1-bb0e-aede37dc52f6",
+        "model": "unknown"
+      },
+      "human_author": "Cheng Rui <286040359@qq.com>"
+    }
+  }
+}

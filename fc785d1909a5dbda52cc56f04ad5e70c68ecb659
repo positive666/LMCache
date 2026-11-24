@@ -1,0 +1,55 @@
+tests/v1/distributed/test_cache_salt_l2_eviction.py
+  s_23deada145cdd4::t_3dd52ff76fc18d 185,198
+  s_23deada145cdd4::t_47410901b32222 177,180,182-183,186-187,197
+  s_23deada145cdd4::t_baabf98e0bf548 178-179,181,184,188-196,199
+lmcache/v1/distributed/storage_controllers/eviction_controller.py
+  s_23deada145cdd4::t_e3218361854f72 346,406
+lmcache/v1/distributed/eviction.py
+  s_23deada145cdd4::t_db48907c2b445c 148-149
+  s_23deada145cdd4::t_31c0591e1f32bf 103-118,162-165,252-257
+  s_23deada145cdd4::t_d8616106ce7c16 139-147
+lmcache/v1/distributed/eviction_policy/isolated_lru.py
+  s_23deada145cdd4::t_194af54cd1147b 80-82,87-116,140-143,180-183,205,211-213,216-227,231-243,352-356,364-370
+  s_23deada145cdd4::t_b15a86697546ad 57-60,134-139,148-149,210,214-215,357-362,371-380
+  s_23deada145cdd4::t_e3218361854f72 228-230
+  s_23deada145cdd4::t_0f2dd83b8f66bc 350
+  s_23deada145cdd4::t_d8616106ce7c16 151-163
+  s_23deada145cdd4::t_bc1c199891d414 284,286-287,290-292,299-304,316-318,321,323-340,342-348
+  s_23deada145cdd4::t_fa79e914875cae 150,349
+tests/v1/distributed/test_lru_eviction_policy.py
+  s_23deada145cdd4::t_b15a86697546ad 261,273
+  s_23deada145cdd4::t_194af54cd1147b 14,18,198-216,236-260,262-268,271-272,274-277,291-310
+  s_23deada145cdd4::t_15ae8ae527e0e0 269-270,278-290
+  s_23deada145cdd4::t_f8787364f9a16c 217-235
+tests/v1/distributed/test_isolated_lru_eviction_policy.py
+  s_23deada145cdd4::t_f8787364f9a16c 125-143
+  s_23deada145cdd4::t_b15a86697546ad 167-168,171,176-188
+  s_23deada145cdd4::t_194af54cd1147b 104-124,144-166,169-170,172-175,189
+  s_23deada145cdd4::t_bc1c199891d414 250-262
+  s_23deada145cdd4::t_b31c4a14196a3d 249
+lmcache/v1/distributed/eviction_policy/lru.py
+  s_23deada145cdd4::t_e3218361854f72 237
+  s_23deada145cdd4::t_ef9dbc4c357272 53-55,156-165,221,308-329,334-338
+  s_23deada145cdd4::t_194af54cd1147b 33,74,85-114,118-119,121,139,147-155,192-194,222-234,238-250,307
+  s_23deada145cdd4::t_b15a86697546ad 235-236,330-333
+  s_23deada145cdd4::t_d8616106ce7c16 167-172,178
+  s_23deada145cdd4::t_d19a8b0fcd2f75 166
+docs/design/v1/mp_coordinator/persistence/README.md
+  s_23deada145cdd4::t_bc1c199891d414 18
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "fc785d1909a5dbda52cc56f04ad5e70c68ecb659",
+  "prompts": {},
+  "sessions": {
+    "s_23deada145cdd4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fcacc-52bf-7391-b911-db9e0ea2e8d1",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+docs/design/v1/mp_coordinator/persistence/README.md
+  s_23deada145cdd4::t_bc1c199891d414 18
+tests/v1/distributed/test_isolated_lru_eviction_policy.py
+  s_23deada145cdd4::t_bc1c199891d414 266-278
+  s_23deada145cdd4::t_b31c4a14196a3d 265
+lmcache/v1/distributed/eviction_policy/isolated_lru.py
+  s_23deada145cdd4::t_bc1c199891d414 289,291-292,295-297,304-309,321-323,326,328-345,347-353
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.22",
+  "base_commit_sha": "5ed68956f6a2973c76786fe1b041d18483ef6100",
+  "prompts": {},
+  "sessions": {
+    "s_23deada145cdd4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019fcacc-52bf-7391-b911-db9e0ea2e8d1",
+        "model": "gpt-5.6-sol"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}

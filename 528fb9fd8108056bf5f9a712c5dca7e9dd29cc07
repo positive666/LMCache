@@ -1,0 +1,22 @@
+lmcache/integration/vllm/lmcache_mp_connector.py
+  s_d6988063cfa454::t_8fdde4b148e4d0 1931-1932,1938
+tests/v1/lazy_offload/test_mp_connector.py
+  s_d6988063cfa454::t_e25e5ac4aa0b12 573-592,608-609,616,618,625
+  s_d6988063cfa454::t_c12f0725576ac5 231
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "528fb9fd8108056bf5f9a712c5dca7e9dd29cc07",
+  "prompts": {},
+  "sessions": {
+    "s_d6988063cfa454": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a0f1cb-29bf-7ea3-8651-a9a0ec4a111b",
+        "model": "gpt-6-astra"
+      },
+      "human_author": "ChengRui <286040359@qq.com>"
+    }
+  }
+}
