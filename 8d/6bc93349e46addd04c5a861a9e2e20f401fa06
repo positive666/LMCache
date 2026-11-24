@@ -1,0 +1,25 @@
+docs/design/v1/mp_observability/METRICS.md
+  s_83918c4b48d1d5::t_3349f33342e181 480-481
+docs/source/mp/observability/metrics.rst
+  s_83918c4b48d1d5::t_9750bf8099c182 559-560
+lmcache/v1/multiprocess/modules/lmcache_driven_transfer.py
+  s_83918c4b48d1d5::t_c9b06918a7ab9c 1153-1154,1244-1268
+tests/v1/multiprocess/test_lmcache_driven_transfer_skip.py
+  s_83918c4b48d1d5::t_a10c169eebd9df 21,312-347
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "8d6bc93349e46addd04c5a861a9e2e20f401fa06",
+  "prompts": {},
+  "sessions": {
+    "s_83918c4b48d1d5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a166c1-2361-7882-b12b-8e2a719564ad",
+        "model": "gpt-6.2-astra"
+      },
+      "human_author": "Rui Rui4 Cheng <chengrui4@lenovo.com>"
+    }
+  }
+}
