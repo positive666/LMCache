@@ -1,0 +1,24 @@
+csrc/cuda/phase_timing_recorder.cu
+  s_83918c4b48d1d5::t_fa4c81e101491d 8,38-59,238,241,280,283
+tests/native/test_phase_timing_eviction.cpp
+  s_83918c4b48d1d5::t_f688d0ba611883 63
+  s_83918c4b48d1d5::t_b75826fa5d4103 1-62,64-67
+tests/v1/mp_observability/test_phase_timing_eviction.py
+  s_83918c4b48d1d5::t_b75826fa5d4103 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bec893fb734e815e35d535fe4db00af93b914312",
+  "prompts": {},
+  "sessions": {
+    "s_83918c4b48d1d5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a166c1-2361-7882-b12b-8e2a719564ad",
+        "model": "gpt-6.2-astra"
+      },
+      "human_author": "Rui Rui4 Cheng <chengrui4@lenovo.com>"
+    }
+  }
+}
