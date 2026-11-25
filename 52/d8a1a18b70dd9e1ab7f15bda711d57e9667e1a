@@ -1,0 +1,465 @@
+tests/v1/mp_observability/test_phase_timing_eviction.py
+  s_83918c4b48d1d5::t_4aa6c6ac1ca37c 23
+lmcache/v1/distributed/memory_manager/gds_l1_memory_manager.py
+  s_ae5674ed2c65c6::t_a09db1b0445745 9
+lmcache/v1/distributed/memory_manager/shared_devdax_region.py
+  s_ae5674ed2c65c6::t_67834e1736ba97 11,14
+lmcache/v1/distributed/p2p.py
+  s_ae5674ed2c65c6::t_a3b4a96bccc4d3 24-26
+lmcache/v1/distributed/storage_controllers/prefetch_controller.py
+  s_ae5674ed2c65c6::t_d35d891d51be51 30,38,563-567,621-624,800,1134-1135,1139-1143,1146-1155,1170-1171,1174-1176,1195,1201-1207,1303,1309-1313,1668-1670
+lmcache/v1/distributed/storage_manager.py
+  s_ae5674ed2c65c6::t_abf3f6840d951f 17,1108-1110,1119-1138
+lmcache/v1/distributed/utils.py
+  s_ae5674ed2c65c6::t_4fd23f31427f63 2-3,6-8,10-11,13-17,21-24,28-37,39-41,43-57,60-61,64-66,68-84,87-94,96-140,142-152,155-156,158-169,171-207,210-211,213-222,224-242,244-250,252-370,373-399,402-407,410-413,416-463
+lmcache/v1/memory_allocators/ad_hoc_memory_allocator.py
+  s_ae5674ed2c65c6::t_919eafd8b05386 11
+lmcache/v1/memory_allocators/buffer_allocator.py
+  s_ae5674ed2c65c6::t_a59ba7e4970351 10
+lmcache/v1/memory_allocators/devdax_memory_allocator.py
+  s_ae5674ed2c65c6::t_929f74f1331321 16-17
+lmcache/v1/memory_allocators/gpu_memory_allocator.py
+  s_ae5674ed2c65c6::t_dc9d7ed2b4612a 13
+lmcache/v1/memory_allocators/host_memory_allocator.py
+  s_ae5674ed2c65c6::t_4e44754d416958 12
+lmcache/v1/memory_allocators/mixed_memory_allocator.py
+  s_ae5674ed2c65c6::t_0a2336e44919a0 13
+lmcache/v1/memory_allocators/paged_tensor_memory_allocator.py
+  s_ae5674ed2c65c6::t_1d9fe389811c4e 11
+lmcache/v1/memory_allocators/pin_memory_allocator.py
+  s_ae5674ed2c65c6::t_1acff9f29a3129 12
+lmcache/v1/memory_allocators/tensor_memory_allocator.py
+  s_ae5674ed2c65c6::t_e2a2ebad161009 10
+lmcache/v1/memory_management.py
+  s_ae5674ed2c65c6::t_226e93536b6308 24
+lmcache/v1/memory_orchestrator/pooling.py
+  s_ae5674ed2c65c6::t_92d9ce5f9c4a77 1-354
+lmcache/v1/mp_observability/subscribers/metrics/lookup.py
+  s_ae5674ed2c65c6::t_e734ec79c823b2 64-65,67-68,70-71,95-96,105
+lmcache/v1/multiprocess/engine_context.py
+  s_ae5674ed2c65c6::t_b6ca42a86e83f1 484-498
+lmcache/v1/multiprocess/http_apis/cache_api.py
+  s_ae5674ed2c65c6::t_4020c1d7f6a14c 34
+lmcache/v1/multiprocess/http_apis/info_api.py
+  s_ae5674ed2c65c6::t_e3841b9d3e7a54 21
+lmcache/v1/multiprocess/http_reconfigure.py
+  s_ae5674ed2c65c6::t_e3c0d3369fbefb 2,4-5,7-10,12-13,15,18-19,21-23,26,29-47,49,51-56,58-66
+lmcache/v1/multiprocess/http_server.py
+  s_ae5674ed2c65c6::t_cd9a774708489f 59,269
+lmcache/v1/multiprocess/modules/blend/lookup.py
+  s_ae5674ed2c65c6::t_6ca96827496d2c 33,184,191-193,233,635-642
+lmcache/v1/multiprocess/modules/engine_driven_transfer.py
+  s_ae5674ed2c65c6::t_3a6c5d330aafa3 30,62,72,348,352-353,357-370,376-386,467,506,516,519-528,662-664,682,692-696,703,750-752,897,914,961
+lmcache/v1/multiprocess/modules/lmcache_driven_transfer.py
+  s_ae5674ed2c65c6::t_79b83f8adf9366 15,17,21,200,214,244,368,490,520,539-540,549-551,556-557,559,562,604-614,629,635,639,647-663,670,720,793,804,813,902,939,973-978,1016,1022,1045-1046,1081,1089-1099,1103,1144,1171,1182,1214,1349-1350,1365-1366,1401-1404,1418,1476,1493,1503,1564,1580,1593
+lmcache/v1/multiprocess/modules/lookup.py
+  s_ae5674ed2c65c6::t_c5629872b4ab0c 142-144,289-293,301-302,304-309,349-351,414-416,419,448,767-768,861-871,886
+lmcache/v1/multiprocess/plugin_modules/qstore.py
+  s_ae5674ed2c65c6::t_667869848bbdf2 26,29,466,481-487,489-490,500-510,521,530,535-546,553,639,656,736,795-797,806,972,984,1010,1040-1044,1282
+lmcache/v1/platform/base/cache_context.py
+  s_ae5674ed2c65c6::t_8361e6cc18df4d 37
+lmcache/v1/platform/base/ipc_wire.py
+  s_ae5674ed2c65c6::t_4b8b8bf416da0b 120-138,207,219
+lmcache/v1/platform/cache_context.py
+  s_ae5674ed2c65c6::t_ac8804db20fd7e 30
+lmcache/v1/platform/devices/cpu/cache_context.py
+  s_ae5674ed2c65c6::t_5b8f7814a18a5b 27,29
+lmcache/v1/platform/devices/cuda/cache_context.py
+  s_ae5674ed2c65c6::t_a574cd69968cd6 28,33
+lmcache/v1/platform/devices/gcu/__init__.py
+  s_ae5674ed2c65c6::t_76f19a318782ac 1-124
+lmcache/v1/platform/devices/gcu/cache_context.py
+  s_ae5674ed2c65c6::t_368048a90bb851 1-542
+lmcache/v1/platform/devices/gcu/device_ops.py
+  s_ae5674ed2c65c6::t_ec81785eaab338 2-21,24-26,32-93,97-176,178-194,196-239,241-251,253-263,265-310,312-330,332-355,357-379,381-397,399-405,407,409-410,412-413,415-416,418-419,421-422,424-425,427-428,430-451
+lmcache/v1/platform/devices/gcu/event_ipc.py
+  s_ae5674ed2c65c6::t_ad919ba556da75 1-61
+lmcache/v1/platform/devices/gcu/ipc_wrapper.py
+  s_ae5674ed2c65c6::t_f13e6337f756eb 1-212
+lmcache/v1/platform/devices/gcu/pin_memory.py
+  s_ae5674ed2c65c6::t_0c800fc5486780 1-167
+lmcache/v1/platform/devices/musa/cache_context.py
+  s_ae5674ed2c65c6::t_373982ad13767b 17,21
+lmcache/v1/platform/devices/npu/cache_context.py
+  s_ae5674ed2c65c6::t_44e795d7a60e29 17,20
+lmcache/v1/platform/devices/npu/pin_memory.py
+  s_ae5674ed2c65c6::t_324426ddd05200 15
+lmcache/v1/transport/errors.py
+  s_ae5674ed2c65c6::t_3abdc38539797a 2,7-48
+lmcache/v1/transport/futures.py
+  s_ae5674ed2c65c6::t_4435c511ac659d 10
+lmcache/v1/transport/grpc/protos/engine_driven_service.proto
+  s_ae5674ed2c65c6::t_0a0e0c0c716f45 18,34-35
+lmcache/v1/transport/grpc/protos/lmcache_driven_service.proto
+  s_ae5674ed2c65c6::t_08a2599342dce9 20
+lmcache/v1/transport/grpc/protos/qstore_service.proto
+  s_ae5674ed2c65c6::t_e3753585bb1028 12,21
+lmcache/v1/transport/grpc/utils.py
+  s_ae5674ed2c65c6::t_8a9ba133276bd2 11
+lmcache/v1/transport/request_client.py
+  s_ae5674ed2c65c6::t_4b8517f2ad0b37 12,47,52-53,77
+rust/raw_block/README.md
+  s_ae5674ed2c65c6::t_e856ad077545e1 42-45,187,206-208
+rust/raw_block/src/lib.rs
+  s_ae5674ed2c65c6::t_408d6c1ebdd3ca 254,1010,1022,1260-1367,1843,3012-3030,4012-4016
+tests/ci/test_multiprocess_split.py
+  s_ae5674ed2c65c6::t_93ba4aed7bb0d1 380,420
+tests/ci/test_weekly_full_build.py
+  s_ae5674ed2c65c6::t_0216900e7dc790 25,27,46-50,156-181,306-348
+tests/cli/commands/bench/test_server_bench.py
+  s_ae5674ed2c65c6::t_45ae00e342a18d 41,46-47,724,894,918
+tests/cli/commands/bench/test_server_bench_buffers.py
+  s_ae5674ed2c65c6::t_7111ef17b8ba20 16
+tests/cli/commands/bench/test_server_bench_cases.py
+  s_ae5674ed2c65c6::t_7db96d44249474 34
+tests/test_utils.py
+  s_ae5674ed2c65c6::t_baa15f00e357ad 2,16-19,30-35,229-230,235-238,243-244
+tests/v1/distributed/l2_adapters/test_p2p_l2_adapter.py
+  s_ae5674ed2c65c6::t_d751670b4f0f2c 36
+tests/v1/distributed/raw_block/test_core.py
+  s_ae5674ed2c65c6::t_9f897f954c4d6d 7-8,43,452,460-461,476-477,545-550,566-727
+tests/v1/distributed/raw_block/test_device.py
+  s_ae5674ed2c65c6::t_68ef8801771464 543-551
+tests/v1/distributed/raw_block/test_utils.py
+  s_ae5674ed2c65c6::t_37f67c20a7b41e 8,426-609
+tests/v1/distributed/test_dax_core_close.py
+  s_ae5674ed2c65c6::t_2cb14cc13a5e48 1-109
+tests/v1/distributed/test_dax_l2_adapter.py
+  s_ae5674ed2c65c6::t_5c7c4b6fd065fd 39,215-229,242-305
+tests/v1/distributed/test_devdax_l1_allocator.py
+  s_ae5674ed2c65c6::t_25a413e4d5f0d4 68,1303-1305,1316-1319
+tests/v1/distributed/test_devdax_l1_reconfigure_integration.py
+  s_ae5674ed2c65c6::t_124c69cfad0e20 42
+tests/v1/distributed/test_l1_interface.py
+  s_ae5674ed2c65c6::t_c35d19def7135a 174-204
+tests/v1/distributed/test_memory_capacity.py
+  s_ae5674ed2c65c6::t_0be028001c9445 11,28,32,38-42,52-53,495-543
+tests/v1/distributed/test_p2p.py
+  s_ae5674ed2c65c6::t_ca27825605f040 45
+tests/v1/distributed/test_prefetch_controller.py
+  s_ae5674ed2c65c6::t_d72dda1ba71505 37,144,153,943-946,971-975,1482-1491,1517-1520,2440-2567
+tests/v1/distributed/test_raw_block_l2_adapter.py
+  s_ae5674ed2c65c6::t_461eb8bccebb24 4,18-23,33,37-38,151,160,665-744
+tests/v1/gpu_connector/test_blocks_first_cs_kv_format.py
+  s_ae5674ed2c65c6::t_bdab418d8705b1 23
+tests/v1/gpu_connector/test_blocks_first_detection.py
+  s_ae5674ed2c65c6::t_63c4f12ac3dfad 15
+tests/v1/gpu_connector/test_blocks_first_kernel_roundtrip.py
+  s_ae5674ed2c65c6::t_a303f3ae30d421 17
+tests/v1/gpu_connector/test_kv_format_detection.py
+  s_ae5674ed2c65c6::t_4fed9b0d15c5bc 19
+tests/v1/gpu_connector/test_normalize_per_layer_formats.py
+  s_ae5674ed2c65c6::t_953628b10c8d4c 13
+tests/v1/gpu_connector/test_per_layer_kv_tuple_format.py
+  s_ae5674ed2c65c6::t_82a335471d0e54 24,26
+tests/v1/memory_orchestrator/test_pooling.py
+  s_ae5674ed2c65c6::t_8e929804c7328c 1-248
+tests/v1/memory_orchestrator/test_pooling_pressure.py
+  s_ae5674ed2c65c6::t_d3690128a34cc6 1-194
+tests/v1/mp_coordinator/mp_server_harness.py
+  s_ae5674ed2c65c6::t_52385ca8a495f4 42
+tests/v1/multiprocess/http_apis/test_reconfigure_instance.py
+  s_ae5674ed2c65c6::t_b5d9add74d9987 1-79
+tests/v1/multiprocess/test_blend_retrieve.py
+  s_ae5674ed2c65c6::t_a221a8af2651ba 75
+tests/v1/multiprocess/test_cache_server.py
+  s_ae5674ed2c65c6::t_9866aee01ab6e2 15,369,418
+tests/v1/multiprocess/test_chunk_size_negotiation.py
+  s_ae5674ed2c65c6::t_8621ba3658fd6a 97-113
+tests/v1/multiprocess/test_direct_copy_planner_gpu.py
+  s_ae5674ed2c65c6::t_6f7a4395362831 24
+tests/v1/multiprocess/test_direct_transfer_dispatch.py
+  s_ae5674ed2c65c6::t_f0b220f638b551 19
+tests/v1/multiprocess/test_engine_driven_transfer.py
+  s_ae5674ed2c65c6::t_5ffa7f09a961a8 32,224-226,232-234,236-238,247,252,968-1001,1628,1636-1652,1659,1661-1665,1695,1707-1708,1719,1721,1728-1730,1746,1775,1789-1790,1874,1889-1890,1940-1941,1948,2017,2045,2047,2070,2147-2163,2603-2605,2613-2620
+tests/v1/multiprocess/test_engine_passthroughs.py
+  s_ae5674ed2c65c6::t_92181f72d28a3b 32-37
+tests/v1/multiprocess/test_event_ipc_handle_path.py
+  s_ae5674ed2c65c6::t_24ca8a95d51182 148,150,288
+tests/v1/multiprocess/test_grpc_auth.py
+  s_ae5674ed2c65c6::t_a53f45e200da25 29
+tests/v1/multiprocess/test_grpc_handler_errors.py
+  s_ae5674ed2c65c6::t_40f628e991d272 17
+tests/v1/multiprocess/test_grpc_native_server.py
+  s_ae5674ed2c65c6::t_2f2b7e4bcbcf06 42-45
+tests/v1/multiprocess/test_grpc_real_server.py
+  s_ae5674ed2c65c6::t_1b4fb1e1cd49cc 19
+tests/v1/multiprocess/test_grpc_transport.py
+  s_ae5674ed2c65c6::t_8dddd8a90a7ba8 76-79,229,358,372,473,756
+tests/v1/multiprocess/test_kv_event_registration.py
+  s_ae5674ed2c65c6::t_99239900ef33c7 19,26,55-57,59-69,267,306-316,329,331,335-336,341-343,352
+tests/v1/multiprocess/test_l1_owner_completion.py
+  s_ae5674ed2c65c6::t_ca924d5e72552a 16,154-157
+tests/v1/multiprocess/test_lmcache_driven_layout_registry.py
+  s_ae5674ed2c65c6::t_cba615ebb8a283 84,88,90,102,158-166,169-177,179-181,184-196
+tests/v1/multiprocess/test_lmcache_driven_transfer_skip.py
+  s_ae5674ed2c65c6::t_cfefa239c01368 20,156-159,169,172,222-224,260-264,374-377,507-508
+tests/v1/multiprocess/test_lookup_outcome_attribution.py
+  s_ae5674ed2c65c6::t_0798d0c3d53072 100-101
+tests/v1/multiprocess/test_mp_extension_hooks.py
+  s_ae5674ed2c65c6::t_4f468684ec10be 136,144,149,167,187,193,311
+tests/v1/multiprocess/test_mq.py
+  s_ae5674ed2c65c6::t_64c457ff7157e3 30,44,425
+tests/v1/multiprocess/test_mq_handler_helpers.py
+  s_ae5674ed2c65c6::t_ba234046cbb07d 12,49,64
+tests/v1/multiprocess/test_native_state_alias_gpu.py
+  s_ae5674ed2c65c6::t_fcde880de341ff 28
+tests/v1/multiprocess/test_native_state_lookup.py
+  s_ae5674ed2c65c6::t_be7b10c172696a 26
+tests/v1/multiprocess/test_qstore.py
+  s_ae5674ed2c65c6::t_98aeeb02e1f733 11,64-68,72-78,82-83,87,91,110-120,129-131,157,178-180,274,284,493-497,568,576-580,615-619,636-640,819-822,898,903
+tests/v1/multiprocess/test_transfer_ctx_guard.py
+  s_ae5674ed2c65c6::t_2ea42930e61d72 29
+tests/v1/multiprocess/test_unfull_chunk.py
+  s_ae5674ed2c65c6::t_52329cbfef7534 37,557-591,625-706
+tests/v1/multiprocess/test_worker_liveness.py
+  s_ae5674ed2c65c6::t_491bff553bbaae 204,220-221,223,238,255,259,275
+tests/v1/platform/devices/cpu/test_cpu_cache_context_layout.py
+  s_ae5674ed2c65c6::t_daeebd05b7133b 7
+tests/v1/platform/devices/cuda/test_cache_context_registration.py
+  s_ae5674ed2c65c6::t_38bc392bb9d218 15
+tests/v1/platform/devices/cuda/test_gpu_cache_context.py
+  s_ae5674ed2c65c6::t_7bf44eb7066119 31
+tests/v1/platform/devices/musa/test_musa_mp_block_transfer.py
+  s_ae5674ed2c65c6::t_360129536f99a1 12
+tests/v1/platform/devices/npu/test_npu_cache_context.py
+  s_ae5674ed2c65c6::t_095d4699ab84a7 21
+tests/v1/platform/devices/rbln/test_rbln_kv_layout.py
+  s_ae5674ed2c65c6::t_4456831c5f3fe5 25
+tests/v1/platform/test_native_block_transfer.py
+  s_ae5674ed2c65c6::t_689596587acf51 19
+tests/v1/test_atom_mp_adapter.py
+  s_ae5674ed2c65c6::t_72d844a5b55755 22
+tests/v1/test_blocks_first_group_construction.py
+  s_ae5674ed2c65c6::t_96c1d9e62a201c 14-15
+tests/v1/test_kv_cache_groups.py
+  s_ae5674ed2c65c6::t_31cf0eead9ad38 272
+tests/v1/test_kv_layer_groups_manager.py
+  s_ae5674ed2c65c6::t_714d06406f8ee1 11,22
+tests/v1/test_mp_connector_kv_roles.py
+  s_ae5674ed2c65c6::t_b6b71fc44276b3 51,910,913-916,929,938,958-1034
+tests/v1/test_mp_connector_mm_keys.py
+  s_ae5674ed2c65c6::t_00300fd0540ce0 189,191-192
+tests/v1/test_mp_connector_unfull_chunk.py
+  s_ae5674ed2c65c6::t_eaefc6ec41fc2c 212-363,457-458
+tests/v1/test_trtllm_integration.py
+  s_ae5674ed2c65c6::t_6752de520a3a04 16
+tests/v1/test_unified_sglang_mp_connector.py
+  s_ae5674ed2c65c6::t_8e0e891d6cc83f 30
+tests/v1/test_vllm_kv_cache_group_edits.py
+  s_ae5674ed2c65c6::t_6f1ce4794f33c6 29,939-963
+tests/v1/test_vllm_kv_cache_groups.py
+  s_ae5674ed2c65c6::t_f6d083a9d95d2d 15-16,54-58,120-121,392,422,524-527,596-683,908-961
+tests/v1/test_vllm_mamba_unified_view_layouts.py
+  s_ae5674ed2c65c6::t_adcfcf2bb2c1ae 43-48,51
+tests/v1/test_vllm_mp_adapter.py
+  s_ae5674ed2c65c6::t_fe7e7c5b0706a7 39,47
+.buildkite/k3_tests/common_scripts/helpers.sh
+  s_ae5674ed2c65c6::t_99cf8fea4f6331 209-222
+.buildkite/k3_tests/multiprocess/README.md
+  s_ae5674ed2c65c6::t_76462214d59da2 33,37-38,89,311,324
+.buildkite/k3_tests/multiprocess/pipeline.yml
+  s_ae5674ed2c65c6::t_b8a17c5f63cec6 33,48,220,462,489,512-526,628,635,659-660,676
+.buildkite/k3_tests/multiprocess/run.sh
+  s_ae5674ed2c65c6::t_63ce9c91f39662 10,15
+.buildkite/k3_tests/multiprocess/scripts/engines/vllm.sh
+  s_ae5674ed2c65c6::t_bab20527e91d59 94-96,179,182,204-226
+.buildkite/k3_tests/multiprocess/scripts/run-single-test.sh
+  s_ae5674ed2c65c6::t_9594a1332ce80c 7,125-141
+.buildkite/k3_tests/multiprocess/scripts/workloads/vllm/eviction-aware-lazy-offload.sh
+  s_ae5674ed2c65c6::t_f4bc217d81ef1e 1-282
+.buildkite/k3_tests/multiprocess/scripts/workloads/vllm/kimi-linear-tp.sh
+  s_ae5674ed2c65c6::t_692363431cdc68 110-113,122
+.buildkite/k3_tests/multiprocess/smoke-pipeline.yml
+  s_ae5674ed2c65c6::t_a0545ab3d49d99 41,45,52,56,62,66,72,76,82,86,109
+.buildkite/k3_tests/multiprocess/split_manifest.yaml
+  s_ae5674ed2c65c6::t_7728a8d60c48e4 22,28-29,35-36,42-43,49-50,56-57,92,98-99,106,113,120,134,141,144-145
+.buildkite/k3_tests/weekly/README.md
+  s_ae5674ed2c65c6::t_6c3feb44d953e1 13-14,27-28,73-75,79-80
+.buildkite/k3_tests/weekly/manifest-xpu.json
+  s_ae5674ed2c65c6::t_3cead9474bb877 1-52
+.buildkite/k3_tests/weekly/manifest.json
+  s_ae5674ed2c65c6::t_aeb601d92f449d 15-18,52
+.buildkite/k3_tests/xpu/unittests/run.sh
+  s_ae5674ed2c65c6::t_e13c8df4a64fc1 90-94
+.github/workflows/cpu_device.yml
+  s_ae5674ed2c65c6::t_632dca77e2ddb2 63-65,78,164-165
+.github/workflows/nightly_build.yml
+  s_ae5674ed2c65c6::t_8e0469c7af4ab9 8-15,17,26,134,325,372,418,462,631,654
+.github/workflows/test.yml
+  s_ae5674ed2c65c6::t_abe8bb514a5257 93-94,317-319
+.github/workflows/weekly_full_build.yml
+  s_ae5674ed2c65c6::t_92e4f811f60711 3-7,9-11,14,18-27,37-38,41,81-97,117-153
+benchmarks/long_doc_qa/long_doc_qa.py
+  s_ae5674ed2c65c6::t_8af5dd3c3aa194 751
+docs/design/cli/commands.md
+  s_ae5674ed2c65c6::t_62570535b32782 225
+docs/design/integration/sglang/lmcache-unified-radix-cache.md
+  s_ae5674ed2c65c6::t_0cbf7d83821672 103
+docs/design/integration/vllm/hybrid-kv-cache-groups.md
+  s_ae5674ed2c65c6::t_c433c49094b533 314
+docs/design/integration/vllm/kv_cache_group_edits.md
+  s_ae5674ed2c65c6::t_501227c8a408c2 85,185,202,266
+docs/design/v1/distributed/l1_manager_interface.md
+  s_ae5674ed2c65c6::t_07f23eeba91413 16-17
+docs/design/v1/distributed/l2_adapters/dax.md
+  s_ae5674ed2c65c6::t_b29227f123696d 140-148
+docs/design/v1/distributed/l2_adapters/raw_block.md
+  s_ae5674ed2c65c6::t_4626f9c12cffa1 138-142
+docs/design/v1/distributed/memory_manager/device-dax-l1.md
+  s_ae5674ed2c65c6::t_42e4dedc9fe6e2 75
+docs/design/v1/distributed/storage_controllers/prefetch_controller.md
+  s_ae5674ed2c65c6::t_be64e1bf0810ed 97-98,111-131,138-140
+docs/design/v1/gpu_connector/layout-invariant.md
+  s_ae5674ed2c65c6::t_f5a344aa59ce70 256
+docs/design/v1/memory_orchestrator/memory_orchestrator.md
+  s_ae5674ed2c65c6::t_32d37ad19ee614 3-45
+docs/design/v1/mp_observability/EVENTS.md
+  s_ae5674ed2c65c6::t_a8a258f8e70aae 304
+docs/design/v1/multiprocess/engine_driven_transfer_design.md
+  s_ae5674ed2c65c6::t_c98a4bfd8dbcce 263-264
+docs/design/v1/multiprocess/http_reconfigure.md
+  s_ae5674ed2c65c6::t_497497271c922b 1-33
+docs/design/v1/multiprocess/transport/request_transport.md
+  s_ae5674ed2c65c6::t_a933460da30a3a 45
+docs/design/v1/multiprocess/unfull_chunk.md
+  s_ae5674ed2c65c6::t_c5e1be363fc94f 133,235-238,282-305
+docs/design/v1/platform/devices/gcu/README.md
+  s_ae5674ed2c65c6::t_13200b025c724e 1-70
+docs/source/cli/bench.rst
+  s_ae5674ed2c65c6::t_fb393f51992beb 1265,1352
+docs/source/mp/http_api.rst
+  s_ae5674ed2c65c6::t_04e5d117e022ae 569,574,577
+docs/source/mp/hybrid_models.rst
+  s_ae5674ed2c65c6::t_390373076bc9a3 272
+docs/source/mp/index.rst
+  s_ae5674ed2c65c6::t_5d7253cd858c65 9
+docs/source/mp/l2_storage/raw_block.rst
+  s_ae5674ed2c65c6::t_2f33db4a74a645 232-235,267-294
+docs/source/mp/memory_pooling.rst
+  s_ae5674ed2c65c6::t_189edd76a178d1 1-97
+docs/source/mp/observability/metrics.rst
+  s_ae5674ed2c65c6::t_de0197cce87be0 282-283,287-288,292-293
+lmcache/cli/commands/bench/quality_bench/core/run_files.py
+  s_ae5674ed2c65c6::t_558bd2f266d769 133
+lmcache/cli/commands/bench/server_bench/arguments.py
+  s_ae5674ed2c65c6::t_39350bcdc140bf 138
+lmcache/cli/commands/bench/server_bench/buffers.py
+  s_ae5674ed2c65c6::t_7590c8a00d7406 14
+lmcache/cli/commands/bench/server_bench/client.py
+  s_ae5674ed2c65c6::t_3174ec2e9ee702 51-52,57,988
+lmcache/integration/atom/multi_process_adapter.py
+  s_ae5674ed2c65c6::t_f1cbf61572a81d 26-30,35
+lmcache/integration/sglang/unified_lmcache_mp_connector.py
+  s_ae5674ed2c65c6::t_f7677d789267bf 509
+lmcache/integration/tensorrt_llm/tensorrt_mp_adapter.py
+  s_ae5674ed2c65c6::t_0734938eb625eb 37,368
+lmcache/integration/vllm/experimental/dispatcher.py
+  s_ae5674ed2c65c6::t_9b0f6519436c59 20
+lmcache/integration/vllm/kv_cache_group_edits.py
+  s_ae5674ed2c65c6::t_2f2e509d3fa2d7 102,160-161,165,191-192
+lmcache/integration/vllm/kv_cache_groups.py
+  s_ae5674ed2c65c6::t_b8ac1dc5f6b0ec 204-209,211-223,225-259,302-324,537,568,570
+lmcache/integration/vllm/lazy_offload_manager.py
+  s_ae5674ed2c65c6::t_3e497d83ce4f56 44
+lmcache/integration/vllm/lazy_offload_policy/__init__.py
+  s_ae5674ed2c65c6::t_5ae774336046f4 18
+lmcache/integration/vllm/lazy_offload_policy/eviction_aware.py
+  s_ae5674ed2c65c6::t_5c5cc34f9fcdde 26
+lmcache/integration/vllm/lazy_offload_policy/fifo.py
+  s_ae5674ed2c65c6::t_18ba40b83f9733 16
+lmcache/integration/vllm/lmcache_mp_connector.py
+  s_ae5674ed2c65c6::t_322a8d324d19a5 73,75,97-98,458,669-673,1559-1560,1563,1570-1581,2251-2257
+lmcache/integration/vllm/mp_lookup_state.py
+  s_ae5674ed2c65c6::t_ccdbe48b7d7461 14
+lmcache/integration/vllm/utils.py
+  s_ae5674ed2c65c6::t_ae66c2de9f87f8 22-24
+lmcache/integration/vllm/vllm_multi_process_adapter.py
+  s_ae5674ed2c65c6::t_8287f7e91fb1d8 40,50,52-58,61
+lmcache/sdk/qringbuffer.py
+  s_ae5674ed2c65c6::t_0ad4ddfb767eb0 18,20
+lmcache/utils.py
+  s_ae5674ed2c65c6::t_56e686ac06b2ef 3-4
+lmcache/v1/client/transfer_context/base.py
+  s_ae5674ed2c65c6::t_2ca7fece5376ec 34
+lmcache/v1/client/transport/grpc_impl/client.py
+  s_ae5674ed2c65c6::t_59a64bbf8432fc 22-24
+lmcache/v1/client/transport/zmq_impl/mq_client.py
+  s_ae5674ed2c65c6::t_a3466784bfc89f 21
+lmcache/v1/client/worker_transfer.py
+  s_ae5674ed2c65c6::t_705474b6c1b2e3 30,36-37,54,552,599-600,628,637,688,869,1064-1072,1083,1097
+lmcache/v1/common/custom_types.py
+  s_ae5674ed2c65c6::t_9434aecac4c61e 5,333,340,359,361,376-377,504-511
+lmcache/v1/common/kv_format/detection.py
+  s_ae5674ed2c65c6::t_b6ea312569a6f2 12
+lmcache/v1/common/kv_format/detectors/atom.py
+  s_ae5674ed2c65c6::t_9dfd91057876ad 8
+lmcache/v1/common/kv_format/detectors/base.py
+  s_ae5674ed2c65c6::t_f250bf9f4a41ee 15
+lmcache/v1/common/kv_format/detectors/registry.py
+  s_ae5674ed2c65c6::t_275e11ec7a4002 16
+lmcache/v1/common/kv_format/detectors/sglang.py
+  s_ae5674ed2c65c6::t_0de87be16ef506 8
+lmcache/v1/common/kv_format/detectors/trtllm.py
+  s_ae5674ed2c65c6::t_2d4ebc98063a7c 12
+lmcache/v1/common/kv_format/detectors/vllm.py
+  s_ae5674ed2c65c6::t_6ed2a8bc735b3e 12
+lmcache/v1/common/kv_format/specs/nl_x_nb_bs_nh_two_hs.py
+  s_ae5674ed2c65c6::t_521821c88a3663 24
+lmcache/v1/common/kv_format/specs/nl_x_nb_nh_bs_two_hs.py
+  s_ae5674ed2c65c6::t_a85fdc7364738a 24
+lmcache/v1/common/kv_layer_groups.py
+  s_ae5674ed2c65c6::t_b08a43c35a9164 18
+lmcache/v1/common/logging.py
+  s_ae5674ed2c65c6::t_ae8ff19d786776 4-5,8,100-139
+lmcache/v1/common/memory_management.py
+  s_ae5674ed2c65c6::t_2397551df4997c 14
+lmcache/v1/common/utils.py
+  s_ae5674ed2c65c6::t_422c830a583bc6 11,13,19,29,33-46,50-73,273,874-945
+lmcache/v1/distributed/api.py
+  s_ae5674ed2c65c6::t_aaf29d2edfb895 675-688,745,762
+lmcache/v1/distributed/config.py
+  s_ae5674ed2c65c6::t_898c4489cfa44b 767-769,1130-1132
+lmcache/v1/distributed/internal_api.py
+  s_ae5674ed2c65c6::t_b94512b07d1f69 356-363
+lmcache/v1/distributed/l1_manager/base.py
+  s_ae5674ed2c65c6::t_7eddc8d4ecf861 222-224,436,444-445,819,916,954,1029-1067,1103
+lmcache/v1/distributed/l2_adapters/bigtable_l2_adapter.py
+  s_ae5674ed2c65c6::t_64a2a6df7a1732 61
+lmcache/v1/distributed/l2_adapters/dax/core.py
+  s_ae5674ed2c65c6::t_5e80c1649ecaeb 20,132,726,739-740,750-751,793-796,798-837,853
+lmcache/v1/distributed/l2_adapters/dax_l2_adapter.py
+  s_ae5674ed2c65c6::t_07aeaa0654b9d9 49,685-691,719,723-731,733,735-744,1008-1009,1019-1022,1071-1073
+lmcache/v1/distributed/l2_adapters/p2p_l2_adapter.py
+  s_ae5674ed2c65c6::t_a6adec47e60f93 64
+lmcache/v1/distributed/l2_adapters/raw_block/core.py
+  s_ae5674ed2c65c6::t_0ea0baf1afe99d 7,39-43,238-239,251,479-480,482-486,687-688,690-692,709-710,723-724,728-730,740-744,806,808,813,819-843,885,911-913,971-976,1029-1050,1631-1660,1684-1685,1697,2055-2056,2093
+lmcache/v1/distributed/l2_adapters/raw_block/io_engine.py
+  s_ae5674ed2c65c6::t_4579e00d31e325 230-231,240-241,513,526-527,537-547,565-566,628-629,902-903,917,1063-1064,1138,1143,1148-1157
+lmcache/v1/distributed/l2_adapters/raw_block_l2_adapter.py
+  s_ae5674ed2c65c6::t_ec428bdd54298a 1348-1350,1359-1373
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "52d8a1a18b70dd9e1ab7f15bda711d57e9667e1a",
+  "prompts": {},
+  "sessions": {
+    "s_83918c4b48d1d5": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a166c1-2361-7882-b12b-8e2a719564ad",
+        "model": "gpt-6.2-sol"
+      },
+      "human_author": "Rui Rui4 Cheng <chengrui4@lenovo.com>"
+    },
+    "s_ae5674ed2c65c6": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a2125a-144a-7672-9dd0-72b248990cca",
+        "model": "unknown"
+      },
+      "human_author": "Rui Rui4 Cheng <chengrui4@lenovo.com>"
+    }
+  }
+}
